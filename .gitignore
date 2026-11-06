@@ -14,3 +14,7 @@ build/
 
 # Environment / secrets
 .env
+
+# portalocker sidecars from governance backlog_add.py / research_append.py
+BACKLOG.md.lock
+RESEARCH.md.lock
