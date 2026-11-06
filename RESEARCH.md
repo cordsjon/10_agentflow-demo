@@ -27,3 +27,17 @@ drafted-by: gap loop (claude-opus-5-5, from untrusted evidence)
 **Ref:** gap:15 rev:55efd7e9b6e24e6fa1f3ed3d218ed26d
 source: gap 15
 drafted-by: gap loop (claude-opus-5-5, from untrusted evidence)
+
+## R3 — Show HN: CUA-S1 – A System One Model for Computer Use — reject
+
+**Artifact:** Show HN: CUA-S1 – A System One Model for Computer Use — https://news.ycombinator.com/item?id=49767564
+**Question:** does it enhance 10_agentflow-demo?
+**What it does:** [inference] CUA-S1 is an early source-only research release of computer-use decision models. Registry matches are only incidental keyword hits, and there is no evidence of an active desktop-automation need in 10_agentflow-demo. Install and stack costs outweigh a speculative gap.
+**Evidence:** stored snapshot SHA-256 40e4fbd4ec7d0ff088e247c06444e21918daaa09b829efe6562d7c73d1ad2188; runtime capability [unmeasured].
+**Verdict:** reject
+**Justification:** [inference] No registry capability covers desktop computer-use or GUI automation. The nearest matches (streaming_textual_markdown, deps_registry, api_router_alias_drift_gate) only share the words 'model' and 'one' and do not overlap functionally. Agent orchestration may already be partly served by agentflow-demo, HermesAndroid and 00_Research, but none of them operates native desktop apps. The gap is real in principle but not demanded. There is no active requirement or prior research, and the adopt gate parked this item. CUA-S1 is an early research release with separately hosted weights. The Cua Driver and Lume components need native curl|bash installs, and Lume requires macOS on Apple Silicon. Spaces is FSL-licensed with paid tiers. Fit with the Python 3.11, FastAPI and SQLite stack is unverified.
+**Cost if adopted:** n/a
+**Revisit-if:** —
+**Ref:** gap:41 rev:69fdc73a3228428397bd5a9dfb1758e3
+source: gap 41
+drafted-by: gap loop (claude-opus-5-5, from untrusted evidence)
