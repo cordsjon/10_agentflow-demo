@@ -41,3 +41,17 @@ drafted-by: gap loop (claude-opus-5-5, from untrusted evidence)
 **Ref:** gap:41 rev:69fdc73a3228428397bd5a9dfb1758e3
 source: gap 41
 drafted-by: gap loop (claude-opus-5-5, from untrusted evidence)
+
+## R4 — Show HN: Foremerge – Catch intent conflicts between parallel coding agents — reject
+
+**Artifact:** Show HN: Foremerge – Catch intent conflicts between parallel coding agents — https://news.ycombinator.com/item?id=49789356
+**Question:** does it enhance 10_agentflow-demo?
+**What it does:** [inference] Foremerge (pre-1.0 Rust CLI/MCP + SQLite in .git) flags intent conflicts between parallel coding agents before edits. The need is relevant, but the tool is local-only with unstable schemas and no benchmarks, so it should be parked for now.
+**Evidence:** stored snapshot SHA-256 9e354202df53cea1e3313ed3ec1c49cb578e430b3b20c1ab589b0bc552a10588; runtime capability [unmeasured].
+**Verdict:** reject
+**Justification:** [inference] The registry has no pre-edit intent-conflict detection above Git. 'orchestrate' validates cross-agent handoff requests (allowlisted agent slugs, schema-checked payloads), and 'main-7' builds and installs agents and hooks. Neither one compares declared semantic scopes (for example replace vs. extend on the same symbol) across parallel worktrees. The gap is real, but it is narrow. Foremerge's own status says it is a 0.5.1 pre-1.0 MVP whose public schemas may change, with no published benchmarks and no cross-machine coordination. The operator's environment is network-async across a Mac Mini dev server, so a store that lives in each machine's local .git cannot coordinate agents running on different hosts. The cost is also high: every agent must reliably publish its intents before editing, and HN commenters note that scopes are often unknown up front. That would tie the agentflow-demo flow to a schema that may change, for a coordination benefit the existing handoff orchestration partly cove
+**Cost if adopted:** n/a
+**Revisit-if:** —
+**Ref:** gap:48 rev:bf7c81e2c7804a359565d30c8f60a6e7
+source: gap 48
+drafted-by: gap loop (claude-opus-5-5, from untrusted evidence)
